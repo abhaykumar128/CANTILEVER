@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>OCR Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1>OCR Result</h1>
+
+  <h3>Original</h3>
+  <img src="{{ image_url }}" style="max-width:90%; height:auto;">
+
+  <h3>Detected text regions</h3>
+  <img src="{{ annotated_url }}" style="max-width:90%; height:auto;">
+
+  <h3>Extracted text</h3>
+  <pre style="white-space: pre-wrap; border:1px solid #ddd; padding:10px;">{{ text }}</pre>
+
+  <a href="{{ txt_download }}">Download extracted text (.txt)</a>
+  <br><br>
+  <a href="{{ url_for('index') }}">Back</a>
+</body>
+</html>

@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; margin: 24px; }
+h1 { margin-bottom: 10px; }
+input[type=file] { margin-bottom: 8px; }
+button { padding: 6px 12px; }
+pre { background: #f8f8f8; padding: 12px; }
+img { border: 1px solid #eee; margin-bottom: 10px; }
